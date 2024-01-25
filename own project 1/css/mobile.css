@@ -1,0 +1,118 @@
+/* media for nav bar */
+@media (max-width: 1429px) {
+  .nav_search {
+    margin-left: 19px;
+  }
+  #search {
+    height: 34px;
+    width: 238px;
+  }
+  .nav_select {
+    height: 34px;
+    width: 44px;
+  }
+  .search_icon {
+    height: 34px;
+    width: 44px;
+  }
+}
+@media (max-width: 1205px) {
+  .nav_search {
+    margin-left: 19px;
+  }
+  #search {
+    height: 34px;
+    width: 238px;
+  }
+  .nav_select {
+    height: 34px;
+    width: 44px;
+  }
+  .search_icon {
+    height: 34px;
+    width: 44px;
+  }
+  #btn_reg {
+    height: 45px;
+    width: 136px;
+    margin-left: 67px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1051px) {
+  /* nav logo */
+  nav {
+    flex-direction: column;
+  }
+  .nav_logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    height: 70px;
+    width: 81px;
+  }
+  /* nav ul list */
+  nav ul {
+    margin-left: 2px;
+  }
+  nav li {
+    margin: 23px auto;
+  }
+  /* nav search */
+  .nav_search {
+    margin: 23px auto;
+  }
+  /* button */
+  #btn_reg {
+    margin: 10px auto;
+  }
+}
+/* home section responsive start */
+/* home image  */
+
+@media (max-width: 1051px) {
+  .Home-image-container {
+    width: 309px;
+  }
+  .home-text-container {
+    padding-left: 18px;
+    line-height: 28px;
+    flex-wrap: wrap;
+    width: 424px;
+    margin-right: 35px;
+  }
+}
+@media (max-width: 880px) {
+  #Home {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+  .Join_btn {
+    margin-bottom: 18px;
+    margin-top: 21px;
+    font-size: 16px;
+    height: 41px;
+    width: 89px;
+  }
+  .Home-image-container {
+    position: relative;
+    margin-top: 31px;
+    width: 337px;
+  }
+  .home-text-container h1 {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+  .home-text-container {
+    margin: 0px auto;
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  .Home_text {
+    font-size: 1.1rem;
+  }
+}
