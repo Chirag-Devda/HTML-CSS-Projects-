@@ -22,11 +22,11 @@
         <div class="logo"></div>
       </div>
       <ul>
-        <li>Home<a href="#Home"></a></li>
-        <li>overview <a href="#"></a></li>
-        <li>series<a href="#"></a></li>
-        <li>card<a href="#"></a></li>
-        <li>contact<a href="#"></a></li>
+        <a href="#Home"><li>Home</li></a>
+        <a href="#second-section"><li>Overview</li></a>
+        <a href="#Latest"><li>Latest</li></a>
+        <a href="#Popular"><li>Popular</li></a>
+        <a href="#Connect"><li>Connect</li></a>
       </ul>
 
       <!-- nav tag search bar  -->
@@ -53,7 +53,7 @@
     </nav>
     <!-- section home  -->
 
-    <section id="Home">
+    <section id="Home" class="my-2">
       <div class="home-text-container">
         <h1>Welcome to Vempire!</h1>
         <div class="Home_text">
@@ -63,7 +63,7 @@
           unforgettable adventure.
         </div>
         <div class="btn2">
-          <button class="btn_yellow Join_btn">Jion us</button>
+          <button class="btn_yellow">Jion us</button>
         </div>
       </div>
       <div class="Home-image-container"></div>
@@ -71,7 +71,7 @@
 
     <!-- second section -->
 
-    <section id="second-section">
+    <section id="second-section" class="my-2 overview">
       <div class="second_section_text">
         <div class="second_section_headline">
           <h1>Find Your Favorite Anime</h1>
@@ -127,16 +127,185 @@
       </div>
     </section>
 
-    <section class="Third-section my-2">
+    <!-- Third Section  -->
+
+    <section id="Latest" class="Third-section my-2">
       <div class="third-section-container mx-width-1 m-auto">
         <div class="About-section">
-          <h1>Watch the Latest Episodes</h1>
-          <p>
+          <h1 class="font-1">Watch the Latest Episodes</h1>
+          <p class="font-2">
             Stay up to date with the latest episodes of your favorite anime
             series. Don't worry about spoilers again with our daily updates.
           </p>
         </div>
-        <div class="card-container"></div>
+        <div class="Third-section-card-container">
+          <div class="flex-items">
+            <div class="Third-section-card">
+              <div class="card-img">
+                <img src="images/card1.jpg" alt="" class="br-1" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-1 font-3">
+                  Boruto: Naruto Next Generations - Episode 196
+                </h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  Boruto's Kāma has been going berserk during battles, putting
+                  his friends at risk. Boruto is determined to keep it a secret
+                  from his father, Naruto.
+                </p>
+              </div>
+            </div>
+            <div class="Third-section-card">
+              <div class="card-img">
+                <img src="images/card2.jpg" alt="" class="br-2" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-2 font-3">One Piece - Episode 985</h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  The battle between Kaido and the Alliance heats up, and
+                  Chopper, Usopp, and Nami try to find a way to cure the
+                  infected residents of Onigashima.
+                </p>
+              </div>
+            </div>
+            <div class="Third-section-card">
+              <div class="card-img">
+                <img src="images/card 3.jpg" alt="" class="br-3" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-3 font-3">My Hero Academia - Episode 114</h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  The provisional licensing exam concludes, and the results are
+                  announced. Midoriya is nervous to see how his classmates fared
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth Section  -->
+
+    <section id="Popular" class="Fourth-section my-2">
+      <div class="Fourth-section-container mx-width-1 m-auto">
+        <div class="About-section">
+          <h1 class="font-1">Explore Popular Series</h1>
+          <p class="font-2">
+            Check out what's trending in the anime world. These popular series
+            are the talk of the town right now.
+          </p>
+        </div>
+        <div class="Fourth-section-card-container">
+          <div class="flex-items">
+            <div class="Fourth-section-card">
+              <div class="card-img">
+                <img src="images/card4.png" alt="" class="br-1" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-1 font-3">Demon Slayer</h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  In Taisho-era Japan, Tanjirou's family is slaughtered by
+                  demons. He sets out on a journey to become a demon slayer and
+                  avenge their deaths.
+                </p>
+              </div>
+            </div>
+            <div class="Fourth-section-card">
+              <div class="card-img">
+                <img src="images/card5.jpg" alt="" class="br-2" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-2 font-3">Attack on Titan</h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  Humanity is on the brink of extinction, forced to live behind
+                  walls to protect themselves from Titans - giant humanoid
+                  monsters that devour people.
+                </p>
+              </div>
+            </div>
+            <div class="Fourth-section-card">
+              <div class="card-img">
+                <img src="images/card6.webp" alt="" class="br-3" />
+              </div>
+              <div class="card-title">
+                <h1 class="cr-3 font-3">Jujutsu Kaisen</h1>
+              </div>
+              <div class="card-desc">
+                <p class="font-2">
+                  Jujutsu sorcerers fight supernatural beings terrorizing the
+                  world. After consuming a cursed object, high school student
+                  Yuuji is recruited to join the fight.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section -->
+    <section class="Fifth-section">
+      <div class="Fifth-section-container mx-width-1 m-auto">
+        <div class="Join-Blogs">
+          <h1 class="font-1">Join the Discussion on Our Blog</h1>
+          <p class="font-2">
+            Our blog features in-depth analysis, episode recaps, and discussions
+            on the latest anime series. Join the conversation and share your
+            opinions with fellow fans.
+          </p>
+          <div class="btn2">
+            <button class="btn_yellow">Visit Our Blog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sixth Section -->
+    <section id="Connect" class="Sixth-section my-2">
+      <div class="Sixth-container mx-width-1 m-auto">
+        <div class="Connect-Fans">
+          <h1 class="font-1">Connect with Other Fans on Our Forum</h1>
+          <p class="font-2">
+            Our forum provides a space for anime enthusiasts to connect and
+            discuss all things related to the world of anime. Join the
+            conversation and make new friends.
+          </p>
+          <div class="btn2">
+            <button class="btn_yellow">Visit Our Forum</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seventh Section -->
+    <section class="Seventh-section">
+      <div class="Seventh-section-container mx-width-1 m-auto">
+        <div class="left-box">
+          <h1 class="font-2">Get Your Hands on Official Merchandise</h1>
+          <p class="font-3">
+            Shop our wide selection of official anime merchandise, from plushies
+            to keychains to cosplay accessories. Express your love for your
+            favorite anime series.
+          </p>
+          <div class="btn2">
+            <button class="btn_yellow">Shop Now</button>
+          </div>
+        </div>
+        <div class="right-box my-2">
+          <img src="images/Adv.png" alt="" />
+          <p>@Chirag Devda</p>
+        </div>
       </div>
     </section>
   </body>
