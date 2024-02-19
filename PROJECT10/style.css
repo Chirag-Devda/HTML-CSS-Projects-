@@ -133,6 +133,7 @@ nav li:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  padding-bottom: 20px;
 }
 .grid_items {
   display: grid;
