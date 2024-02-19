@@ -10,7 +10,8 @@
   <li>Project 7 - Youtube clone</li>
   <li>Project 8 - Documantation Website</li>
   <li>Project 9 - Blog Website</li>
-  <li>Project 10 - Vempire Anime</li>
+  <li>Project 10 - Portfolio Website</li>
   <li>Project 11 - Amazon</li>
   <li>Project 12 - Myonlinemeals.com</li>
+  <li>Project 12 - Vempire website </li>
 </ul>
