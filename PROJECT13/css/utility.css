@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo+2:wght@600&family=Kumbh+Sans:wght@600&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+
+.my-2 {
+  margin: 20px 0px;
+}
+.mx-width-1 {
+  max-width: 1200px;
+}
+.m-auto {
+  margin: 0px auto;
+}
+.font-1 {
+  font-family: "Balsamiq Sans", sans-serif;
+}
+.font-2 {
+  font-family: "Exo 2", sans-serif;
+}
+.font-3 {
+  font-family: "Kumbh Sans", sans-serif;
+}
+.font-4 {
+  font-family: "Roboto Flex", sans-serif;
+}
+.font-5 {
+  font-family: "Roboto", sans-serif;
+}
+.br-1 {
+  border: 2px solid yellow;
+}
+.br-2 {
+  border: 2px solid #ff4500;
+}
+.br-3 {
+  border: 2px solid rgb(1, 145, 255);
+}
+.cr-1 {
+  color: yellow;
+}
+.cr-2 {
+  color: #ff4500;
+}
+.cr-3 {
+  color: rgb(1, 145, 255);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections {
+  height: 100vh;
+  background-color: #020728;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
