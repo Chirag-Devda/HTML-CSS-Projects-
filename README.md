@@ -13,5 +13,5 @@
   <li>Project 10 - Portfolio Website</li>
   <li>Project 11 - Amazon</li>
   <li>Project 12 - Myonlinemeals.com</li>
-  <li>Project 12 - Vempire website </li>
+  <li>Project 13 - Vempire website </li>
 </ul>
