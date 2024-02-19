@@ -214,6 +214,7 @@ nav li:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
+
 /* footer */
 footer {
   background: var(--darker-color);
@@ -254,4 +255,46 @@ footer {
   #contact .container {
     height: 50vh;
   }
+}
+
+/* the css for Adding Email on click effect contact section  */
+.contact_way .email {
+  display: none; /* Hide email by default */
+}
+
+.contact_way .toggle {
+  cursor: pointer; /* Make cursor indicate clickable element */
+}
+
+.contact_way .toggle::after {
+  content: ""; /* Display plus sign or any other symbol */
+  display: inline-block;
+  margin-left: 5px; /* Adjust spacing */
+}
+
+.contact_way .toggle.active::after {
+  content: "-"; /* Display minus sign or any other symbol */
+}
+
+.contact_way .toggle.active + .email {
+  display: block; /* Display email when toggle is active */
+}
+
+/* the css for Adding mobile number on click effect at contact section  */
+
+.contact_way .mobile {
+  display: none; /* Hide mobile number by default */
+}
+
+.contact_way .MobileText {
+  cursor: pointer; /* Make cursor indicate clickable element */
+}
+
+/* the css for Adding twitter on click effect at contact section  */
+.contact_way .twitter {
+  display: none; /* Hide mobile number by default */
+}
+
+.contact_way .TwitterText {
+  cursor: pointer; /* Make cursor indicate clickable element */
 }
