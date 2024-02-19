@@ -216,6 +216,9 @@ footer {
 .link_lists {
   margin-top: 2rem;
 }
+.link_lists ul li {
+  cursor: pointer;
+}
 .link_lists h2 {
   color: #ffffff;
   margin: 16px 0px 14px;
@@ -254,4 +257,9 @@ footer {
 }
 .copyright {
   padding-top: 5px;
+}
+
+/* utility Css*/
+.cr-p {
+  cursor: pointer;
 }
