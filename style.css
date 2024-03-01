@@ -253,6 +253,7 @@ footer {
   }
   #contact .container {
     height: 50vh;
+    padding: 48px;
   }
 }
 /* the css for Adding Email on click effect contact section  */
