@@ -1,0 +1,165 @@
+/* Tab Css */
+@media screen and (max-width: 1220px) {
+  nav {
+    justify-content: space-evenly;
+  }
+  .hero_section .container {
+    padding: 15px;
+  }
+  .hero_section h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-left: 0px;
+  }
+  .hero_section h3 {
+    font-size: 30px;
+  }
+  .hero_section p {
+    font-size: 1.2rem;
+  }
+  .music_section {
+    padding: 0px 36px;
+    padding-top: 50px;
+  }
+  .music_section h2 {
+    font-size: 2.5rem;
+  }
+  .music_section h4 {
+    font-size: 1.1rem;
+  }
+  button {
+    border-radius: 0% 40%;
+    font-size: 1rem;
+  }
+  .music_section p {
+    font-size: 1.1rem;
+  }
+  .ipad-iphone-img {
+    margin-top: -349px;
+    position: relative;
+    top: 350px;
+  }
+  .ipad-iphone-img img {
+    width: 90vw;
+  }
+  .about-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 500px 30px 0px 30px;
+  }
+  .about-section p {
+    color: #777070;
+    font-size: 1.1rem;
+  }
+  .about-section h3 {
+    font-size: 1.2rem;
+  }
+  .mac-img img {
+    width: 85vw;
+  }
+  .video-section .container {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+  }
+
+  .gift-Card img {
+    width: 30vw;
+  }
+  .gift-content {
+    padding: 0px 23px;
+  }
+  .footer_upper .container {
+    flex-wrap: wrap;
+    padding: 0px 25px;
+    gap: 20px;
+  }
+  .footer_links h4 {
+    font-size: 18px;
+  }
+}
+.footer_links ul li {
+  color: #c7c7c7;
+  font-size: 16px;
+}
+
+/* Mobile Css */
+
+@media screen and (max-width: 481px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero_section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-left: 0px;
+  }
+  .hero_section h3 {
+    font-size: 18px;
+  }
+  .hero_section p {
+    font-size: 12px;
+  }
+
+  .music_section h2 {
+    font-size: 1.5rem;
+  }
+  .music_section h4 {
+    font-size: 0.7rem;
+  }
+  button {
+    border-radius: 0% 40%;
+    font-size: 0.7rem;
+    padding: 7px 9px;
+  }
+  .music_section p {
+    font-size: 0.7rem;
+  }
+  .ipad-iphone-img {
+    margin-top: -150px;
+    position: relative;
+    top: 150px;
+  }
+
+  .about-section .container {
+    padding: 230px 30px 0px 30px;
+    gap: 20px;
+  }
+  .about-section h3 {
+    font-size: 0.9rem;
+  }
+  .about-section p {
+    color: #777070;
+    font-size: 0.9rem;
+  }
+
+  .gift-card {
+    flex-direction: column;
+  }
+  .gift-Card img {
+    width: 40vw;
+  }
+
+  .footer_links h4 {
+    font-size: 14px;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+  .footer_links ul li {
+    color: #c7c7c7;
+    font-size: 10px;
+  }
+  .footer_links ul {
+    list-style-type: decimal;
+    font-size: 10px;
+  }
+  .footer_lower .container {
+    font-size: 15px;
+  }
+}
