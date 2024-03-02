@@ -31,6 +31,7 @@ document.querySelectorAll(".TwitterText").forEach((item) => {
     item.style.display = "none"; // Hide the mobile
     item.nextElementSibling.style.display = "block"; // Show the mobile number <p> element
     item.nextElementSibling.style.fontSize = "19px"; // Show the mobile number <p> element
+    item.nextElementSibling.style.margin = "0px 2px"; // Show the mobile number <p> element
   });
 });
 document.querySelectorAll(".twitter").forEach((item) => {
@@ -49,17 +50,18 @@ function handleMaxWidth(x) {
     // change the background color to yellow
     document.querySelectorAll(".toggle").forEach((item) => {
       item.addEventListener("click", () => {
-        item.nextElementSibling.style.fontSize = "10px"; // Show the mobile number <p> element
+        item.nextElementSibling.style.fontSize = "10px";
+        item.nextElementSibling.style.fontWeight = "500";
       });
     });
     document.querySelectorAll(".MobileText").forEach((item) => {
       item.addEventListener("click", () => {
-        item.nextElementSibling.style.fontSize = "13px"; // Show the mobile number <p> element
+        item.nextElementSibling.style.fontSize = "13px";
       });
     });
     document.querySelectorAll(".TwitterText").forEach((item) => {
       item.addEventListener("click", () => {
-        item.nextElementSibling.style.fontSize = "9px"; // Show the mobile number <p> element
+        item.nextElementSibling.style.fontSize = "9px";
       });
     });
   }
