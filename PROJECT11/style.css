@@ -153,7 +153,7 @@ ul {
   font-weight: 600;
   cursor: pointer;
 }
-/* shopping section */
+
 .shopping_section {
   display: flex;
   justify-content: space-evenly;
@@ -164,7 +164,7 @@ ul {
 .box {
   border: 2px solid black;
   height: 400px;
-  width: 23%;
+  width: 24vw;
   margin-top: 15px;
   background: white;
 }
