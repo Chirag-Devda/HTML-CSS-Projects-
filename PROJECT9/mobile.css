@@ -1,0 +1,38 @@
+@media screen and (max-width: 879px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero_img img {
+    width: 80vw;
+  }
+  .hero_content h1 {
+    font-size: 3rem;
+  }
+  .hero_content br {
+    display: none;
+  }
+  .hero_content h4 {
+    font-size: 2rem;
+  }
+  .h-card {
+    flex-direction: column-reverse;
+  }
+  article {
+    padding: 0px 25px;
+  }
+  article h2 {
+    font-size: 20px;
+  }
+  article p {
+    font-size: 16px;
+  }
+  .banner_img h1 {
+    font-size: 30px;
+  }
+  .about_author h3 {
+    font-size: 20px;
+  }
+  .about_author p {
+    font-size: 16px;
+  }
+}
