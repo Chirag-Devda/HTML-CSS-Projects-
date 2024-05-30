@@ -1,303 +1,150 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --lighting-color: #0089b7;
-  --dark-color: #003d62;
-  --darker-color: #003251;
-  --secondary-color: #fff700;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  font-size: 62.5%;
-}
-body,
-html {
-  font-family: "Poppins", sans-serif;
+html,
+body {
+  font-style: "roboto", sans-serif;
   font-weight: 300;
   line-height: 1.4;
-  scroll-behavior: smooth;
-  color: white;
-}
-body {
-  font-size: 1.4rem;
-}
-/* header */
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-header {
-  background: var(--lighting-color);
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 10;
-}
-ul {
-  list-style-type: none;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 10px;
 }
-a {
-  text-decoration: none;
-  color: white;
+.logo img {
+  width: 150px;
+  height: auto;
 }
-ul {
+.center_bar {
   display: flex;
-
-  gap: 1rem;
-}
-nav li {
-  font-size: 1.8rem;
-  transition: 0.3s ease-in-out;
-  border-bottom: 0.4rem solid transparent;
-}
-nav li:hover {
-  border-bottom: 0.4rem solid var(--secondary-color);
-  transition: 0.3s ease-in-out;
-}
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-/* hero */
-#home {
-  background: var(--dark-color);
-  padding: 4rem;
-  border-bottom: 4px solid var(--lighting-color);
-}
-.hero-container {
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-.hero_content {
+.search {
+  display: flex;
+}
+.search input {
+  min-width: 600px;
+  padding: 10px 20px;
+  border: 0.5px solid #ccc;
+}
+.search button {
+  border: none;
+  padding: 10px 20px;
+}
+.mic {
+  border-radius: 50%;
+  padding: 15px;
+  background: #d0cccc;
   display: grid;
   place-items: center;
+  margin-left: 15px;
 }
-#home h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.side_nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 90px;
 }
-.hi_text {
-  font-size: 6rem;
-  font-weight: bold;
-  color: var(--secondary-color);
+.tags {
+  display: flex;
+  padding: 10px 20px;
+  gap: 15px;
+  border-top: 1px solid #ccc;
 }
-.name_text {
-  font-size: 5rem;
+.tag {
+  padding: 5px 20px;
+  border: 1px solid rgb(22, 22, 22);
+  border-radius: 20px;
 }
-#home h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
-  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+.dark {
+  background: black;
+  color: white;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 85%;
-  }
+.light {
+  background: rgb(238, 238, 238);
+  color: rgb(67, 67, 67);
 }
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+.container {
+  display: flex;
 }
-
-/* project section */
-
-#project {
-  background: var(--darker-color);
-}
-#project h1 {
-  font-size: 6rem;
-  padding: 2renm;
-  text-align: center;
-}
-.project_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding-bottom: 20px;
-}
-.grid_items {
-  display: grid;
-  place-items: center;
-}
-.card {
+aside {
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  width: 320px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: 0.2s ease-in-out;
+  align-items: center;
+  gap: 30px;
 }
-.card:hover {
-  transform: scale(1.05);
-  transition: 1s ease-in-out;
-}
-.card:hover img {
-  transform: scale(1.05);
-  transition: 0.3ss ease-in-out;
-  opacity: 0.8;
-}
-.card_content {
-  padding: 2rem;
-  position: relative;
-  top: -6.5rem;
-  margin-bottom: -6.5rem;
-  transform: translateY(100px);
-  transition: 0.5s ease-in-out;
-}
-.card:hover .card_content {
-  background: white;
-  color: var(--dark-color);
-  transform: translateY(0px);
-  transition: 0.5s ease-in-out;
-}
-.card_content h3 {
-  text-align: center;
-}
-/* contact section */
-#contact {
-  background: var(--dark-color);
-}
-#contact h2 {
-  font-size: 6rem;
-  text-align: center;
-  margin: 2rem 0;
-}
-#contact .container {
-  height: 90vh;
+.icons {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  align-items: center;
   justify-content: center;
 }
-.top_contact {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+.icons img {
+  width: 30px;
 }
-.contact_way {
+.icons p {
+  font-size: 10px;
+  margin-top: -5px;
+}
+.bars {
+  margin-top: 20px;
+}
+.main-container {
+  min-width: 100%;
+}
+main {
+  min-height: 100vh;
+  background-color: rgb(206, 206, 206);
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card-img {
+  padding: 10px;
+  max-width: 320px;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   align-items: center;
 }
-.contact_way i {
-  font-size: 3rem;
+.thumbnail {
+  width: 174px;
 }
-.contact_way h3 {
-  font-size: 3rem;
+.avatar {
+  height: 42px;
+  width: 32px;
+}
+.avatar-content {
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+}
+.card-content {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.channel-name {
+  font-size: 16px;
   font-weight: bold;
 }
-.bottom_contact {
-  gap: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+.content-status {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
 }
-/* footer */
-footer {
-  background: var(--darker-color);
-  padding: 2rem;
-  text-align: center;
-  color: white;
-  font-size: 1.6rem;
-}
-/* media query */
-@media (max-width: 796px) {
-  html {
-    font-size: 40%;
-  }
-
-  #home .hero-container {
-    flex-direction: column;
-  }
-  .hero_img {
-    display: grid;
-    place-items: center;
-  }
-  #contact .container {
-    height: 70vh;
-  }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 32%;
-  }
-  #home .hero-container {
-    flex-direction: column;
-  }
-  .hero_img {
-    display: grid;
-    place-items: center;
-  }
-  #contact .container {
-    height: 50vh;
-    padding: 25px;
-  }
-}
-/* the css for Adding Email on click effect contact section  */
-.contact_way .email {
-  display: none; /* Hide email by default */
-}
-
-.contact_way .toggle {
-  cursor: pointer; /* Make cursor indicate clickable element */
-}
-
-.contact_way .toggle::after {
-  content: ""; /* Display plus sign or any other symbol */
-  display: inline-block;
-  margin-left: 5px; /* Adjust spacing */
-}
-
-.contact_way .toggle.active::after {
-  content: "-"; /* Display minus sign or any other symbol */
-}
-
-.contact_way .toggle.active + .email {
-  display: block; /* Display email when toggle is active */
-}
-
-/* the css for Adding mobile number on click effect at contact section  */
-
-.contact_way .mobile {
-  display: none; /* Hide mobile number by default */
-}
-
-.contact_way .MobileText {
-  cursor: pointer; /* Make cursor indicate clickable element */
-}
-
-/* the css for Adding twitter on click effect at contact section  */
-.contact_way .twitter {
-  display: none; /* Hide mobile number by default */
-}
-
-.contact_way .TwitterText {
-  cursor: pointer; /* Make cursor indicate clickable element */
+@media (max-width: 478px) {
 }
